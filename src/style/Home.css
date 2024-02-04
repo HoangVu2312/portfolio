@@ -1,0 +1,322 @@
+.home-page {
+    max-width: 100vw;
+    /* height: 280vh; */
+    background-image: url("../images/home-bg.png") ;
+    background-size: cover;
+    background-color: #2b0000;
+    background-position: left;
+    position: relative;
+    overflow: hidden;
+    overflow-x: hidden;
+    cursor: url('../images/cursor.png') 16 16, auto;
+
+}
+
+
+.corner-border {
+    max-width: 130px;
+    position: fixed;
+}
+
+.border-1 {
+    top: 0;
+    left: 0;
+    transform: rotate(180deg) scaleY(1);
+}
+.border-2 {
+    top: 0;
+    right: 0;
+    transform: rotate(-90deg) scaleX(1);
+}
+.border-3 {
+    bottom: 0;
+    left: 0;
+    transform: rotate(90deg) scaleY(1);
+}
+.border-4 {
+    bottom: 0;
+    right: 0;
+}
+
+.profile-frame {
+    max-width: 500px;
+    width: 500px;
+    height: auto;
+}
+
+
+
+@font-face {
+    font-family: pearl;
+    src: url(../Thedarkestpearl.ttf);
+}
+
+.title h1{
+    margin-top: 60px;
+    font-family: pearl;
+    font-size: 90px;
+    font-weight: 800;
+    color: #2c2a26;
+    z-index: 1000 !important;
+    text-shadow: 1px 1px 1px #fddda8,
+                 1px 2px 1px #a68956,
+                 1px 3px 1px #a68956,
+                 1px 4px 1px #a68956,
+                 1px 5px 1px #a68956,
+                 1px 6px 1px #a68956,
+                 1px 7px 1px #a68956,
+                 1px 8px 1px #a68956,
+            1px 18px 6px rgba(16,16,16,0.4),
+            1px 22px 10px rgba(16,16,16,0.2),
+            1px 25px 25px rgba(16,16,16,0.2),
+            1px 30px 60px rgba(16,16,16,0.4);
+}
+
+.title h5{
+    font-family: pearl;
+    font-size: 26px;
+    font-weight: 300;
+    color: #2c2a26;
+}
+
+/* ------------------ */
+
+.rotate-profile {
+    position: relative;
+    max-width: 600px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.frame-container {
+    position: absolute;
+    max-width: 500px;
+    width: 500px;
+    height: auto;
+    z-index: 0;
+    top: 0;
+}
+
+
+.profile-card {
+    position: absolute;
+    top: 37%;
+    z-index: 3;
+    width: 40%;
+    height: 40%;
+    cursor: url("../images/pointer.png")16 16, auto;
+    z-index: 5;
+    border-radius: 50%;
+}
+
+
+
+.card-container {
+    height: 100%;
+    min-width: 100%;
+    /* position: relative; */
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+    cursor: url("../images/pointer.png")16 16, auto;
+}
+
+.profile-card:hover >  .card-container {
+    transform: rotateY(180deg);
+}
+
+.profile-font, .profile-back {
+    position: absolute;
+    height: 98%;
+    width: 100%;
+    backface-visibility: hidden;
+}
+
+.profile-back {
+    background-image: url("../images/profile-font.png") ;
+    background-size: cover;
+    background-position: left;
+    border-radius: 50%;
+    transform: rotateY(180deg);
+}
+
+
+.profile-font {
+    background-image: url("../images/profile-back.png") ;
+    background-color: #f0e1c7;
+    background-size: cover;
+    background-position: center;
+    border: 5px solid black;
+    border-radius: 50%;
+}
+
+/* ------------------ */
+
+.bio-section {
+    margin-top: 200px;
+    margin-bottom: 200px;
+    max-width: 100vw;
+    width: 100%;
+    height: 100%;
+    /* border: 2px solid red; */
+}
+
+.bio-card {
+    position: relative;
+    cursor: url("../images/pointer.png")16 16, auto;
+    z-index: 5;
+    height: 647px;
+    width: 380px;
+}
+
+.bio-card-container{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+}
+
+.bio-card:hover >  .bio-card-container {
+    cursor: url("../images/pointer.png")16 16, auto;
+    transform: rotateY(180deg);
+}
+
+
+
+.bio-font,
+.bio-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    border-radius: 12px;
+    cursor: url("../images/pointer.png")16 16, auto;
+}
+
+.bio-font-scrolled {
+    border: 1px solid rgb(175, 182, 81); 
+    box-shadow: 1px 1px 1px #fddda8,
+        1px 2px 1px #a68956,
+        1px 3px 1px #a68956,
+        1px 18px 6px rgba(16, 16, 16, 0.4),
+        1px 22px 10px rgba(16, 16, 16, 0.2),
+        1px 25px 25px rgba(16, 16, 16, 0.2),
+        1px 30px 60px rgba(16, 16, 16, 0.4);
+        animation: floatAnimation 4s 2s infinite alternate ease-in-out;
+        transition: box-shadow 2s 1s ease-in-out;
+}
+
+.bio-font{
+    height: 100%;
+    width: 100%;
+    background-image: url("../images/project-font.png");
+    background-size: cover;
+    background-position: left;
+}
+
+@keyframes floatAnimation {
+    0% {
+        transform: translateY(0) skewX(0) skewY(0);
+    }
+    50% {
+        transform: translateY(-15px) skewX(1deg) skewY(-1deg);
+    }
+    100% {
+        transform: translateY(0) skewX(0) skewY(0);
+    }
+}
+
+
+
+.bio-back {
+    background-image: url("../images/bio-card-back.png");
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: left;
+    transform: rotateY(180deg);
+    border: 1px solid rgb(175, 182, 81); 
+    box-shadow: 1px 1px 1px #fddda8,
+        1px 2px 1px #a68956,
+        1px 3px 1px #a68956,
+        1px 18px 6px rgba(16, 16, 16, 0.4),
+        1px 22px 10px rgba(16, 16, 16, 0.2),
+        1px 25px 25px rgba(16, 16, 16, 0.2),
+        1px 30px 60px rgba(16, 16, 16, 0.4);
+}
+
+
+/* -------------------- */
+.numbers {
+    margin-top: 30px;
+    max-width: fit-content;
+}
+
+.number {
+    font-family: pearl;
+    min-width: 70%;
+    width: 60%;
+}
+
+.number > h1{
+    font-size: 80px;
+    font-weight: 500 ;
+    color: #f0e1c7;
+}
+
+.number >h3 {
+    color: #f0e1c7;
+}
+
+.number-scrolled > h1{
+    color:  #36362b;
+    text-shadow: 1px 1px 1px #fddda8,
+                 1px 2px 1px #a68956,
+                 1px 3px 1px #a68956,
+                 1px 4px 1px #a68956,
+                 1px 5px 1px #a68956,
+                 1px 6px 1px #a68956,
+                 1px 7px 1px #a68956,
+                 1px 8px 1px #a68956;
+    transition: all 2s ease-in-out;
+}
+
+.number-scrolled > h3 {
+    color: #2c2a26;
+    transition: all 4s 2s;
+}
+
+
+@media (max-width: 590px) {
+  h1 {
+    font-size: 56px !important;
+  }
+
+  .profile-card{
+    width: 58%;
+    }
+  .bio-card {
+    height: 544px;
+    width: 320px;
+   }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  h1 {
+    font-size: 80px !important; 
+  }
+  .profile-card{
+    width: 45%;
+  }
+}
+
+@media (min-width: 992px) {
+  h1 {
+    font-size: 96px !important; 
+  }
+  .profile-card{
+    width: 38%;
+  }
+}

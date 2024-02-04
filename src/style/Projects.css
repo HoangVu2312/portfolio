@@ -1,0 +1,276 @@
+.project-page{
+    max-width: 100vw;
+    min-height: 120vh;
+    background-image: url("../images//project-bg.png");
+    background-color: #2b0000;
+    background-size: cover;
+    background-position: left;
+    overflow: hidden;
+    overflow-x: hidden;
+    object-fit: cover;
+    cursor: url('../images/cursor.png') 16 16, auto;
+}
+
+.ball-container {
+    padding-top: 200px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    min-height: 100vh;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.ball-container .magic-ball {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-75%, -50%);
+    width: 500px;
+    height: 500px;
+    background-image: url("../images/smoke4.png");
+    background-size: cover;
+    background-repeat: repeat-x;
+    border-radius: 50%;
+    z-index: 10;
+    box-shadow: inset 1px 1px 25px rgba(0, 0, 0, 0.8),
+                       5px 5px 50px rgb(82, 64, 64),
+                       1px 18px 6px rgba(16, 16, 16, 0.4),
+        1px 22px 10px rgba(16, 16, 16, 0.2),
+        1px 25px 25px rgba(16, 16, 16, 0.2),
+        1px 30px 60px rgba(16, 16, 16, 0.4);
+    animation: animateBall 25s 1s linear infinite;
+}
+
+
+.ball-container  .open-link{
+    position: absolute;
+    max-width: 80%;
+    width: 60%;
+    bottom: 15%;
+    left: 0;
+    margin-top: 25%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s;
+
+}
+
+.alow-display {
+    display: flex !important;
+}
+.alow-display a{
+    cursor: url('../images/pointer.png') 16 16, auto;
+
+}
+
+.ball-container  .open-link .link-container {
+    padding: 10px 10px;
+    cursor: url('../images/pointer.png') 16 16, auto;
+    border-radius: 6px;
+    transition: all 1s;
+}
+
+.ball-container  .open-link .link-container:hover{
+    border: 1px solid #afb651;
+    /* background-color: #d2d69760; */
+    box-shadow: 1px 1px 1px #fddda8,
+                 1px 2px 1px #a68956,
+                 1px 3px 1px #a68956,
+                 1px 4px 1px #a68956,
+                 1px 5px 1px #a68956,
+            1px 18px 6px rgba(16,16,16,0.4),
+            1px 22px 10px rgba(16,16,16,0.2),
+            1px 25px 25px rgba(16,16,16,0.2),
+            1px 30px 60px rgba(16,16,16,0.4);
+}
+
+.ball-container  .open-link .link-container a{
+    text-decoration: none;
+    color: rgb(126, 11, 3);
+    font-size: 22px;
+    font-weight: 300;
+    font-family: "pearl";
+    text-shadow: 1px 1px 1px #fddda8,
+                 1px 2px 1px #a68956,
+                 1px 3px 1px #a68956,
+                 1px 4px 1px #a68956;
+}
+
+
+.ball-container .project-preview{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-75%, -50%);
+    width: 500px;
+    height: 500px;
+    background-size: cover;
+    background-repeat: repeat-x;
+    border-radius: 50%;
+    z-index: 0;
+    animation: animateBall 80s 2s linear infinite;
+}
+
+
+
+@keyframes animateBall {
+    0%{
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -1250px 0;
+    }
+}
+
+
+/* ---------------- */
+
+.project-page .project-cards{
+    width: 100%;
+    max-width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+
+.hover-cards{
+    animation: hovering 4s 1s infinite alternate ease-in-out;
+}
+
+@keyframes hovering {
+    0% {
+        transform: translateY(0) ;
+    }
+    50% {
+        transform: translateY(-15px) ;
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+/* -------------- */
+.wholeCard{
+    position: relative;
+    cursor: url('../images/pointer.png') 16 16, auto;
+    z-index: 5;
+    height: 426px;
+    width: 250px;
+}
+
+
+
+.projectCard-container {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+}
+
+.rotate-3d:hover > .projectCard-container{
+    transform: rotateY(180deg);
+}
+
+
+
+
+.projectCard-font, .projectCard-back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    border-radius: 12px;
+    cursor: url('../images/pointer.png') 16 16, auto;
+    border: 1px solid rgb(175, 182, 81); 
+    box-shadow: 1px 1px 1px #fddda8,
+        1px 2px 1px #a68956,
+        1px 3px 1px #a68956,
+        1px 18px 6px rgba(16, 16, 16, 0.4),
+        1px 22px 10px rgba(16, 16, 16, 0.2),
+        1px 25px 25px rgba(16, 16, 16, 0.2),
+        1px 30px 60px rgba(16, 16, 16, 0.4);
+}
+
+.projectCard-font{
+    height: 100%;
+    width: 100%;
+    background-image: url("../images/bio-font.png") !important; /*test*/
+    background-size: cover;
+    background-position: left;
+    z-index: 100;
+}
+
+.card-1 {
+    background-image: url("../images/project1-back.png");
+}
+.card-2 {
+    background-image: url("../images/project2-back.png");
+}
+.card-3 {
+    background-image: url("../images/project3-back.png");
+}
+.card-4 {
+    background-image: url("../images/project1-back.png");
+}
+.card-5 {
+    background-image: url("../images/project1-back.png");
+}
+.card-6 {
+    background-image: url("../images/project1-back.png");
+}
+
+.projectCard-back{
+    /* background-image: url("../images/bio-card-back.png"); */
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: left;
+    transform: rotateY(180deg);
+    border: 1px solid rgb(175, 182, 81); 
+}
+
+@media (max-width: 768px) {
+    .magic-ball, .project-preview {
+        top: 40% !important;
+        left: 70% !important;
+        width: 380px !important;
+        height: 380px !important;
+    }
+    .open-link {
+        top: 50% !important;
+        left: 20% !important;
+    }
+    .wholeCard {
+        height: 255px !important;
+        width: 150px !important;
+    }
+}
+
+@media (max-width: 1480px) {
+    .magic-ball, .project-preview {
+        top: 50% !important;
+        left: 70% !important;
+        width: 380px !important;
+        height: 380px !important;
+    }
+    .open-link {
+        top: 70% !important;
+        left: 25% !important;
+    }
+    .wholeCard {
+        max-height: 307px !important;
+        max-width: 180px !important;
+        margin-left: 0px !important;
+    }
+}
+
+
+
+
+

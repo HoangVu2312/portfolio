@@ -1,0 +1,46 @@
+.loader-page{
+    width: 100vw;
+    height: 100vh;
+    cursor: url('../images/cursor1.png') 16 16, auto;
+    background-color: black;
+}
+
+.loader-page img{
+    position: fixed;
+}
+
+.get-started-button {
+    cursor: url('../images/cursor1.png') 16 16, auto !important;
+    padding: 10px 15px;
+    border-radius: 50%;
+    height: 100px;
+    width: 180px;
+    background-image: url("../images/btn-bg.png");
+    background-position: center center;
+    background-size: cover;
+    border: 1px solid rgb(182, 142, 81); 
+    box-shadow: 1px 1px 1px #fddda8,
+        1px 2px 1px #a68956,
+        1px 3px 1px #a68956;
+    transition: all 0.5s ease-in-out;
+    text-align: center;
+    transform: translateY(150px);
+}
+
+.get-started-button a{
+    text-decoration: none;
+    cursor: url('../images/cursor.png') 16 16, auto;
+    font-family: pearl;
+    color: #520000;
+    font-weight: 600;
+    font-size: 26px;
+    text-shadow: 1px 1px 1px #fddda8;
+    transition: all 0.3s;
+}
+
+.get-started-button a:hover {
+    text-shadow: 1px 1px 1px #fddda8,
+        1px 2px 1px #a68956,
+        1px 3px 1px #a68956,
+        1px 4px 1px #a68956;
+}

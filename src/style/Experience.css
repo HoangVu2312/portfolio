@@ -1,0 +1,65 @@
+.education {
+    margin-top: 250px !important;
+    margin-bottom: 250px !important;
+    padding-bottom: 100px;
+    /* overflow: hidden; */
+}
+
+.education h2{
+    font-size: 43px;
+    font-weight: 600 !important;
+    margin-bottom: 50px;
+    color: linear-gradient( to right,#BF953F, #FCF6BA, #B38728, #FBF5B7, #aa771c );
+    text-shadow: 1px 1px 1px #fddda8,
+                 1px 2px 1px #a68956,
+                 1px 3px 1px #a68956,
+                 1px 4px 1px #a68956,
+                 1px 5px 1px #a68956,
+                 1px 6px 1px #a68956,
+            1px 18px 6px rgba(16,16,16,0.4),
+            1px 22px 10px rgba(16,16,16,0.2),
+            1px 25px 25px rgba(16,16,16,0.2),
+            1px 30px 60px rgba(16,16,16,0.4);
+    animation: floating 3s infinite alternate ease-in-out;
+}
+
+@keyframes floating {
+    0% {
+        transform: translateY(0) ;
+    }
+    50% {
+        transform: translateY(-10px) ;
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.education h3{
+    font-size: 32px;
+    text-shadow: 1px 1px 1px #fddda8,
+                 1px 2px 1px #a68956,
+                 1px 3px 1px #a68956,
+                 1px 4px 1px #a68956;
+}
+
+.education .scroll-bar {
+    width: 5px;
+    /* background-image: linear-gradient( to bottom,#BF953F, #FCF6BA, #B38728, #FBF5B7, #aa771c ); */
+    background-image: url("../images/scroll.png");
+    height: 83%;
+    top: 60px !important;
+    left: 0px !important;
+    transform-origin: top !important;
+    box-shadow: 1px 1px 1px #fddda8,
+        1px 2px 1px #a68956,
+        1px 3px 1px #a68956,
+        1px 18px 6px rgba(16, 16, 16, 0.4),
+        1px 22px 10px rgba(16, 16, 16, 0.2),
+        1px 25px 25px rgba(16, 16, 16, 0.2),
+        1px 30px 60px rgba(16, 16, 16, 0.4);
+}
+
+.education ul li {
+    padding: 30px 20px;
+} 

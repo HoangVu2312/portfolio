@@ -1,0 +1,132 @@
+import React,  { useRef }  from 'react'
+import "../style/Experience.css"
+import { motion, useScroll } from 'framer-motion'
+import CircleIcon from './CircleIcon'
+
+
+
+
+const Experience = () => {
+
+    const ref = useRef(null);
+    const Iref = useRef(null);
+    const Iref2 = useRef(null);
+    const Iref3 = useRef(null);
+    const Iref4 = useRef(null);
+    const Iref5 = useRef(null);
+    const {scrollYProgress} = useScroll(
+        {
+            target: ref,
+            offset: ["start end", "end center"]
+        }
+    );
+
+  return (
+    <div className="education my-5">
+      <h2 className="text-center">Experience</h2>
+
+      <div
+        ref={ref}
+        className="mx-auto position-relative"
+        style={{ width: "75%" }}
+      >
+        {/* expanding div */}
+        <motion.div
+          style={{ scaleY: scrollYProgress }}
+          className="scroll-bar position-absolute "
+        />
+
+        <ul className="d-flex flex-column justify-content-between mx-4 pb-3">
+
+          <li ref={Iref} className="d-flex flex-column justify-content-center align-items-start position-relative">
+
+            {/* icon */}
+            <CircleIcon reference={Iref}/>
+
+
+            <div>
+              <h3>University of Technology and Education</h3>
+              <span>2017-2019 | HCM city, VietNam</span>
+              <p>
+                I stared my higher education in VietNam with the major
+                Autiomation Technology. I learned mostly about car-automation
+                and the logic behind it.
+              </p>
+            </div>
+          </li>
+          <li ref={Iref2} className="d-flex flex-column justify-content-center align-items-start position-relative">
+
+            {/* icon */}
+            <CircleIcon reference={Iref2}/>
+
+
+            <div>
+              <h3>LAB University of Applied Sciences</h3>
+              <span>2020-now | Lahti, Finland</span>
+              <p>
+                Choosing Information Technology was the right choice for me when i started university in Finland.
+                I learned most of the basic and foundation in software development from my school and I got a chance
+                to test out my skills with many subjects.
+              </p>
+            </div>
+          </li>
+          <li ref={Iref3} className="d-flex flex-column justify-content-center align-items-start position-relative">
+
+            {/* icon */}
+            <CircleIcon reference={Iref3}/>
+
+
+            <div>
+              <h3>cybersoft Academy</h3>
+              <span>2021-2023 | HCM city, VietNam</span>
+              <p>
+                Aside from University, I also undertook an intense traning course at Cybersoft Academy
+                where I learned the advance concept and got a profound understanding in this industry.
+                Additionally, for the last 6 months, I had some experience working with a couple start-up
+                companies as an exam to graduate from this Academy
+              </p>
+            </div>
+          </li>
+
+          <li ref={Iref4} className="d-flex flex-column justify-content-center align-items-start position-relative">
+
+            {/* icon */}
+            <CircleIcon reference={Iref4}/>
+
+
+            <div>
+              <h3>Teaching Assistance at Cybersoft Academy</h3>
+              <span>2023 | Online, VietNam</span>
+              <p>
+                After graduation, I decided to stay to support my teacher as an Assistance.
+                My job mostly is to answer questions from students and help them understand 
+                better about the lessions.
+              </p>
+            </div>
+          </li>
+
+          <li ref={Iref5}className="d-flex flex-column justify-content-center align-items-start position-relative">
+
+            {/* icon */}
+            <CircleIcon reference={Iref5}/>
+
+
+            <div>
+              <h3>Integrify Academy</h3>
+              <span>2023-2024 | Online, Finland</span>
+              <p>
+                With the determination to improving my skills and expanding my knowledge,
+                I try took the chance at Integrify to learn more about application and Data
+                Analysis using Java and Python. 
+              </p>
+            </div>
+          </li>
+
+          
+        </ul>
+      </div>
+    </div>
+  );
+}
+
+export default Experience

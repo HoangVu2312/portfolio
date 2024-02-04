@@ -1,0 +1,228 @@
+.contact-section {
+    max-width: 100vw;
+    width: 100%;
+    height: 120vh;
+    background-image: url("../images/contact-bg.png");
+    background-color: #2b0000;
+    background-size: cover;
+    background-position: left;
+    overflow: hidden;
+    overflow-x: hidden;
+    object-fit: cover;
+    cursor: url('../images/cursor.png') 16 16, auto;
+}
+
+.pyramid-container {
+    background-image: url("../images/pyramid-bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.pyramid{
+    background-image: url("../images/eye-holder.png");
+    width: 520px;
+    height: 625px;
+    background-position: center;
+    background-size: contain;
+    position: relative !important;
+    animation: eyefloat 8s 2s infinite alternate ease-in-out;
+    
+}
+
+@keyframes eyefloat {
+    0% {
+        transform: translateY(0) skewX(0) skewY(0);
+    }
+    30% {
+        transform: translateY(-30px) skewX(-1deg) skewY(1deg);
+    }
+    50% {
+        transform: translateY(5px) skewX(0) skewY(0);
+    }
+    70% {
+        transform: translateY(-30px) skewX(1deg) skewY(-1deg);
+    }
+    100% {
+        transform: translateY(0) skewX(0) skewY(0);
+    }
+}
+
+
+
+
+.triangle {
+    position: absolute;
+    top: 36%;
+    left: -57%;
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    background-image: url("../images/eye-bg.png");
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    transform: translateX(500px);
+    overflow: hidden;
+    box-shadow: inset 5px 5px 15px rgba(255, 255, 255, 0.747);
+   
+}
+
+
+.triangle .eye-container{
+    position: relative;
+    top: 0px;
+    display: flex;
+}
+
+.triangle .eye-container .eye{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    display: block;
+    background: #7a4f4fe1;
+    margin: 0 15px;
+    border-radius: 50%;
+    box-shadow: inset 5px 5px 10px rgba(255, 255, 255, 0.5);
+}
+
+.triangle .eye-container .eye::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.904);
+    border-radius: 50%;
+    transition: all  0.3s;
+}
+
+.triangle .eye-container .eye::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    background-color: rgb(56, 19, 19);
+    border-radius: 50%;
+}
+
+
+
+.pyramid:hover .eye-container .eye::before {
+    transform: scale(1.2) translate(-42%, -40%);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+}
+
+/* --------------- */
+
+.icons{
+    padding: 15px 10px;
+    margin-top: 30px;
+}
+
+.icons i{
+    color: #41423c;
+    text-shadow: 1px 1px 1px #fddda8,
+                 1px 2px 1px #a68956,
+                 1px 3px 1px #a68956,
+                 1px 4px 1px #a68956,
+                 1px 5px 1px #a68956,
+                 1px 6px 1px #a68956;
+    transition: all 0.4s ease-in-out;
+}
+
+.icons i:hover{
+    text-shadow: 1px 1px 1px #fddda8,
+        1px 2px 1px #a68956,
+        1px 3px 1px #a68956,
+        1px 4px 1px #a68956,
+        1px 5px 1px #a68956,
+        1px 6px 1px #a68956,
+        1px 18px 6px rgba(16, 16, 16, 0.4),
+        1px 22px 10px rgba(16, 16, 16, 0.2),
+        1px 25px 25px rgba(16, 16, 16, 0.2),
+        1px 30px 60px rgba(16, 16, 16, 0.4);
+}
+
+.resume, .contact{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.resume .resume-btn, .contact-btn{
+    cursor: url('../images/pointer.png') 16 16, auto;
+    padding: 25px 20px;
+    border-radius: 50%;
+    height: 100px;
+    width: 250px;
+    background-image: url("../images/btn-bg.png");
+    background-position: center center;
+    background-size: cover;
+    border: 1px solid rgb(182, 142, 81); 
+    box-shadow: 1px 1px 1px #fddda8,
+        1px 2px 1px #a68956,
+        1px 3px 1px #a68956;
+    transition: all 0.5s ease-in-out;
+    text-align: center;
+    
+}
+.resume .resume-btn:hover,  .contact-btn:hover{
+    background-color: #41423ce1;
+    box-shadow: 1px 1px 1px #fddda8,
+        1px 2px 1px #a68956,
+        1px 3px 1px #a68956,
+        1px 18px 6px rgba(16, 16, 16, 0.4),
+        1px 22px 10px rgba(16, 16, 16, 0.2),
+        1px 25px 25px rgba(16, 16, 16, 0.2),
+        1px 30px 60px rgba(16, 16, 16, 0.4);
+}
+
+
+
+.resume .resume-btn h2, .contact-btn h2{
+    font-family: pearl;
+    font-weight: 600 !important;
+    font-size: 34px !important;
+    color: #520000;
+    text-shadow: 1px 1px 1px #fddda8,
+        1px 2px 1px #a68956,
+        1px 3px 1px #a68956,
+        1px 4px 1px #a68956;
+}
+
+.resume .resume-btn a, .contact .contact-btn a{
+    text-decoration: none;
+    cursor: url('../images/pointer.png') 16 16, auto;
+}
+
+.icons a{
+    text-decoration: none;
+    cursor: url('../images/cursor.png') 16 16, auto;
+}
+
+
+@media (max-width: 590px) {
+    .pyramid{
+        width: 450px !important;
+        height: 541px !important;
+    }
+    .triangle {
+        top: 36%;
+        left: -72%;
+        width: 105px;
+        height: 105px;
+    }
+}
+  
