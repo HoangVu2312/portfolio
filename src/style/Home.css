@@ -1,6 +1,6 @@
 .home-page {
     max-width: 100vw;
-    /* height: 280vh; */
+    min-height: 100%;
     background-image: url("../images/home-bg.png") ;
     background-size: cover;
     background-color: #2b0000;
@@ -132,7 +132,7 @@
 }
 
 .profile-back {
-    background-image: url("../images/profile-font.png") ;
+    background-image: url("../images/avatar.jpg") ;
     background-size: cover;
     background-position: left;
     border-radius: 50%;

@@ -5,7 +5,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { motion, useMotionValue } from 'framer-motion';
 
 import CardImage0 from "../images/preview1.png";
-import CardImage1 from "../images/project-5.png";
+import CardImage1 from "../images/project-1.png";
 import CardImage2 from "../images/project-2.png";
 import CardImage3 from "../images/project-3.png";
 import CardImage4 from "../images/project-4.png";
@@ -55,7 +55,9 @@ function Projects() {
     "projects",
     "https://honagvu-real-estate-utopia.onrender.com",
     "https://ecommerce-gsv7.onrender.com",
-    "https://magoon.onrender.com"
+    "https://magoon.onrender.com",
+    "https://mini-project-ten-sigma.vercel.app",
+    "https://wolt-mini-project.vercel.app"
   ]
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
