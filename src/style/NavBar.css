@@ -23,12 +23,9 @@
 }
 
 .toggle-btn{
-    transform: translateX(300px);
     border: 1px solid #704601;
 }
-.toggle-btn:active{
-    outline: none;
-}
+
 
 .nav-container  h5{
     text-decoration: none;
