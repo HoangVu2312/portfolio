@@ -9,6 +9,8 @@
     overflow-x: hidden;
     object-fit: cover;
     cursor: url('../images/cursor.png') 16 16, auto;
+    object-fit: contain;
+    height: fit-content;
 }
 
 .ball-container {

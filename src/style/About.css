@@ -10,6 +10,8 @@
     overflow-x: hidden;
     font-family: pearl;
     cursor: url('../images/cursor.png') 16 16, auto;
+    object-fit: contain;
+    height: fit-content;
 }
 
 /* avoid using the same classname in similar items */
@@ -67,9 +69,10 @@
     transform: scale(1.2);
 }
 
-@media (max-width: 768px) {
-    .hand{
-        display: none;
+@media (max-width: 568px) {
+    .hand, .right-hand{
+        display: none !important;
+
     }
     .skills{
         max-height: 60vh;
@@ -79,9 +82,9 @@
     }
   }
   
-  @media (min-width: 768px) and (max-width: 991px) {
-    .hand{
-        display: none;
+  @media (max-width: 991px) {
+    .hand, .right-hand{
+        display: none !important;
     }
     .skills{
         max-height: 60vh;

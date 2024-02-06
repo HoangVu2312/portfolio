@@ -76,7 +76,7 @@ function Home() {
 
   return (
     <div className="home-page">
-      <Container className="d-flex justify-content-center align-items-center flex-column" style={{maxWidth:"80%"}}>
+      <Container className="d-flex justify-content-center align-items-center flex-column" style={{maxWidth:"80%", minHeight:"180vh"}}>
         <div className="borders">
           <Image
             className="corner-border border-1"
@@ -170,9 +170,10 @@ function Home() {
           </Row>
         </div>
 
-        {/* navigation */}
-        <NavBar/>
+        
       </Container>
+      {/* navigation */}
+      <NavBar/>
     </div>
   );
 }
