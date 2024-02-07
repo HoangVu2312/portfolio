@@ -99,7 +99,7 @@ function Contact() {
       <div className="contact-section">
         <Container
           className=" d-flex justify-content-center align-items-between flex-column position-relative mb-5"
-          style={{ minHeight: "100vh", top: "0", left: "0" }}
+          style={{ minHeight: "110vh", top: "0", left: "0" }}
         >
           <Row>
             <Col md={2}>

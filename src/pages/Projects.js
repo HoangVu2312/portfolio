@@ -148,7 +148,7 @@ function Projects() {
 
   return (
     <div className="project-page">
-      <Container className="mb-5">
+      <Container className="mb-5" style={{minHeight:"120vh"}}>
         <Row>
           <Col lg={6}>
             <div className="ball-container">
