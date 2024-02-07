@@ -52,7 +52,7 @@ function Home() {
       const scrollPosition = window.scrollY / (document.body.scrollHeight - window.innerHeight);
       scrollY.set(scrollPosition);
 
-      setIsScrolled(scrollPosition === 1);
+      setIsScrolled(scrollPosition >= 0.5);
     };
 
     window.addEventListener('scroll', onScroll);
