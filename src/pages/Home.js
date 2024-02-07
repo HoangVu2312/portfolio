@@ -64,7 +64,7 @@ function Home() {
 
   const scrollingSpeed = 0.5; 
 
-  const profileY = useTransform(scrollY, [0, 1], ["0%", "190%" ]);
+  const profileY = useTransform(scrollY, [0, 1], ["0%", "200%" ]);
   const nameY = useTransform(scrollY, [0, -1], ["0%", `${380 * scrollingSpeed}%`]);
   // const nameX = useTransform(scrollY, [0, 1], ["0%", `${370 * scrollingSpeed}%`]);
 

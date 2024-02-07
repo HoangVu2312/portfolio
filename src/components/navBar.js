@@ -1,28 +1,28 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { Container } from 'react-bootstrap'
 import "../style/NavBar.css"
-import { Navbar, Nav, Button, NavDropdown} from "react-bootstrap";
-import { LinkContainer } from "react-router-bootstrap";
-import { motion, useMotionValue } from 'framer-motion';
+import { Navbar, Nav} from "react-bootstrap";
+// import { LinkContainer } from "react-router-bootstrap";
+// import { motion, useMotionValue } from 'framer-motion';
 
 
 function NavBar() {
-  const scrollY = useMotionValue(0);
+  // const scrollY = useMotionValue(0);
 
-  useEffect(() => {
-    const onScroll = () => {
-      const scrollPosition = window.scrollY;
-      scrollY.set(scrollPosition);
-    };
+  // useEffect(() => {
+  //   const onScroll = () => {
+  //     const scrollPosition = window.scrollY;
+  //     scrollY.set(scrollPosition);
+  //   };
 
-    window.addEventListener('scroll', onScroll);
+  //   window.addEventListener('scroll', onScroll);
 
-    return () => {
-      window.removeEventListener('scroll', onScroll);
-    };
-  }, [scrollY]);
+  //   return () => {
+  //     window.removeEventListener('scroll', onScroll);
+  //   };
+  // }, [scrollY]);
 
-  const shouldAnimate = scrollY.get() > 1;
+  // const shouldAnimate = scrollY.get() > 0.5;
 
   return (
     <Container className="d-flex justify-content-center align-items-center">
@@ -31,20 +31,9 @@ function NavBar() {
         className="navigation_bar"
         style={{ maxWidth: "80vw" }}
       >
-        <motion.div
+        <div
           className="container nav-container d-flex justify-content-between"
-          initial={{
-            y: shouldAnimate ? "20rem" : "-5rem",
-            opacity: shouldAnimate ? 0 : 1,
-          }}
-          animate={{
-            y: shouldAnimate ? "-2.5rem" : "20rem",
-            opacity: shouldAnimate ? 1 : 0,
-          }}
-          transition={{
-            duration: 2,
-            type: "ease-in",
-          }}
+          
         >
           <Navbar.Toggle
             aria-controls="basic-navbar-nav"
@@ -52,24 +41,24 @@ function NavBar() {
           />{" "}
           {/*repesent the toggle button*/}
           <Navbar.Collapse id="basic-navbar-nav" >
-            <Nav className="m-auto nav-content " >
+            <Nav className="m-auto nav-content mt-2" >
 
-              <div className="ms-3 home-link">
+              <div className="ms-3 home-link d-flex justify-content-center">
                 <a href="/home">
                   <h5>Home</h5>
                 </a>
               </div>
-              <div className="ms-3 about-link">
+              <div className="ms-3 about-link  d-flex justify-content-center">
                 <a href="/about">
                   <h5>About</h5>
                 </a>
               </div>
-              <div className="ms-3 projects-link">
+              <div className="ms-3 projects-link  d-flex justify-content-center">
                 <a href="/projects">
                   <h5>Projects</h5>
                 </a>
               </div>
-              <div className="ms-3 contact-link">
+              <div className="ms-3 contact-link  d-flex justify-content-center">
                 <a href="/contact">
                   <h5>Contact</h5>
                 </a>
@@ -77,7 +66,7 @@ function NavBar() {
 
             </Nav>
           </Navbar.Collapse>
-        </motion.div>
+        </div>
       </Navbar>
     </Container>
   );

@@ -1,6 +1,6 @@
 .home-page {
     max-width: 100vw;
-    min-height: 110%;
+    min-height: 230%;
     background-image: url("../images/home-bg.png") ;
     background-size: cover;
     background-color: #2b0000;
@@ -10,7 +10,8 @@
     overflow-x: hidden;
     cursor: url('../images/cursor.png') 16 16, auto;
     object-fit: contain;
-    height: fit-content;
+    min-height: fit-content;
+    overflow: hidden;
 }
 
 
@@ -290,7 +291,7 @@
 }
 
 
-@media (max-width: 590px) {
+@media (max-width: 768px) {
   h1 {
     font-size: 56px !important;
   }
@@ -311,6 +312,13 @@
   .profile-card{
     width: 45%;
   }
+  .bio-card {
+    position: relative;
+    cursor: url("../images/pointer.png")16 16, auto;
+    z-index: 5;
+    height: 579px !important;
+    width: 340px !important;
+}
 }
 
 @media (min-width: 992px) {
