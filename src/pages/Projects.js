@@ -10,7 +10,7 @@ import CardImage2 from "../images/project-2.png";
 import CardImage3 from "../images/project-3.png";
 import CardImage4 from "../images/project-4.png";
 import CardImage5 from "../images/project-5.png";
-import CardImage6 from "../images/project-3.png";
+import CardImage6 from "../images/project-6.png";
 import NavBar from "../components/navBar";
 import transition from "../components/transition";
 import contactSound from '../soundtrack/project.mp3'; 
@@ -56,8 +56,9 @@ function Projects() {
     "https://honagvu-real-estate-utopia.onrender.com",
     "https://ecommerce-gsv7.onrender.com",
     "https://magoon.onrender.com",
+    "https://fitness-typescript-theta.vercel.app",
+    "https://wolt-mini-project.vercel.app",
     "https://mini-project-ten-sigma.vercel.app",
-    "https://wolt-mini-project.vercel.app"
   ]
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
