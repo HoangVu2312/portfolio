@@ -57,8 +57,8 @@ function Projects() {
     "https://ecommerce-gsv7.onrender.com",
     "https://magoon.onrender.com",
     "https://fitness-typescript-theta.vercel.app",
+    "https://campari-bar.vercel.app",
     "https://wolt-mini-project.vercel.app",
-    "https://mini-project-ten-sigma.vercel.app",
   ]
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
