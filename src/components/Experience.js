@@ -81,8 +81,8 @@ const Experience = () => {
               <span>2021-2023 | HCM city, VietNam</span>
               <p>
                 Aside from University, I also undertook an intense traning course at Cybersoft Academy
-                where I learned the advance concept and got a profound understanding in this industry.
-                Additionally, for the last 6 months, I had some experience working with a couple start-up
+                where I learned the advance concept and got a profound understanding of this industry.
+                Additionally, for the last 6 months, I had some experience working with a couple of start-up
                 companies as an exam to graduate from this Academy
               </p>
             </div>
@@ -95,12 +95,12 @@ const Experience = () => {
 
 
             <div>
-              <h3>Teaching Assistance at Cybersoft Academy</h3>
+              <h3>Teaching Assistant at Cybersoft Academy</h3>
               <span>2023 | Online, VietNam</span>
               <p>
-                After graduation, I decided to stay to support my teacher as an Assistance.
-                My job mostly is to answer questions from students and help them understand 
-                better about the lessions.
+                After graduation, I decided to stay to support my teacher as an Assistant.
+                My job was mostly to answer questions from students and helped them understand 
+                about the lessons better.
               </p>
             </div>
           </li>
@@ -115,8 +115,8 @@ const Experience = () => {
               <h3>Integrify Academy</h3>
               <span>2023-2024 | Online, Finland</span>
               <p>
-                With the determination to improving my skills and expanding my knowledge,
-                I try took the chance at Integrify to learn more about application and Data
+                With the determination to improve my skills and expand my knowledge,
+                I took the chance at Integrify to learn more about application and Data
                 Analysis using Java and Python. 
               </p>
             </div>
