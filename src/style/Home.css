@@ -3,7 +3,7 @@
     min-height: 230%;
     background-image: url("../images/home-bg.png") ;
     background-size: cover;
-    background-color: #2b0000;
+    /* background-color: #2b0000; */
     background-position: left;
     position: relative;
     overflow: hidden;
