@@ -264,7 +264,7 @@ function About() {
               <motion.div
                 className="center-planet d-flex justify-content-center align-items-center position-absolute"
                 initial={{ x: 0, y: 0 }}
-                animate={{ x: "20vw", y: "-12vh" }}
+                animate={{ x: "28vw", y: "-12vh" }}
                 transition={{
                   duration: 0.5,
                   type: "ease-out",
@@ -277,7 +277,7 @@ function About() {
               <motion.div
                 className="center-planet d-flex justify-content-center align-items-center position-absolute"
                 initial={{ x: 0, y: 0 }}
-                animate={{ x: "5vw", y: "22vh" }}
+                animate={{ x: "15vw", y: "26vh" }}
                 transition={{
                   duration: 0.5,
                   type: "ease-out",
@@ -285,6 +285,19 @@ function About() {
                 }}
               >
                 <h6>CMS</h6>
+              </motion.div>
+
+              <motion.div
+                className="center-planet d-flex justify-content-center align-items-center position-absolute"
+                initial={{ x: 0, y: 0 }}
+                animate={{ x: "-35vw", y: "18vh" }}
+                transition={{
+                  duration: 0.5,
+                  type: "ease-out",
+                  delay: 2,
+                }}
+              >
+                <h6>Headless</h6>
               </motion.div>
 
               <motion.div
