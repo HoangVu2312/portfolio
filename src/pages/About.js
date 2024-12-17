@@ -158,7 +158,7 @@ function About() {
                   delay: 2,
                 }}
               >
-                <h6>Languages</h6>
+                <h6>CMS</h6>
               </motion.div>
 
               <motion.div
@@ -195,7 +195,7 @@ function About() {
                   delay: 2,
                 }}
               >
-                <h6>typescript</h6>
+                <h6>Typescript</h6>
               </motion.div>
               <motion.div
                 className="center-planet d-flex justify-content-center align-items-center position-absolute"
@@ -219,7 +219,7 @@ function About() {
                   delay: 2,
                 }}
               >
-                <h6>mongodb</h6>
+                <h6>GrapghQL</h6>
               </motion.div>
 
               <motion.div
@@ -258,7 +258,7 @@ function About() {
                   delay: 2,
                 }}
               >
-                <h6>FIREBASE</h6>
+                <h6>Azure/AWS</h6>
               </motion.div>
 
               <motion.div
@@ -272,6 +272,20 @@ function About() {
                 }}
               >
                 <h6>web-design</h6>
+              </motion.div>
+            </motion.div>
+
+                              <motion.div
+                className="center-planet d-flex justify-content-center align-items-center position-absolute"
+                initial={{ x: 0, y: 0 }}
+                animate={{ x: "-11vw", y: "24vh" }}
+                transition={{
+                  duration: 0.5,
+                  type: "ease-out",
+                  delay: 2,
+                }}
+              >
+                <h6>NEXTJS</h6>
               </motion.div>
             </motion.div>
           </Col>
