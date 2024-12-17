@@ -273,12 +273,11 @@ function About() {
               >
                 <h6>web-design</h6>
               </motion.div>
-            </motion.div>
 
-                              <motion.div
+              <motion.div
                 className="center-planet d-flex justify-content-center align-items-center position-absolute"
                 initial={{ x: 0, y: 0 }}
-                animate={{ x: "-11vw", y: "24vh" }}
+                animate={{ x: "25vw", y: "2vh" }}
                 transition={{
                   duration: 0.5,
                   type: "ease-out",
@@ -287,7 +286,19 @@ function About() {
               >
                 <h6>NEXTJS</h6>
               </motion.div>
-            </motion.div>
+
+              <motion.div
+                className="center-planet d-flex justify-content-center align-items-center position-absolute"
+                initial={{ x: 0, y: 0 }}
+                animate={{ x: "25vw", y: "2vh" }}
+                transition={{
+                  duration: 0.5,
+                  type: "ease-out",
+                  delay: 2,
+                }}
+              >
+                <h6>TaiwindCSS</h6>
+              </motion.div>
           </Col>
 
           <Col lg={1}>
