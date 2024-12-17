@@ -152,7 +152,7 @@ function Home() {
               <div className='numbers d-flex flex-column align-items-end'>
 
                 <div className={`number mt-2 ${isScrolled ? 'number-scrolled' : ''}`}>
-                  <h1>20+</h1>
+                  <h1>15+</h1>
                   <h3>Projects</h3>
                 </div>
 
@@ -162,8 +162,8 @@ function Home() {
                 </div>
 
                 <div className={`number mt-2 ${isScrolled ? 'number-scrolled' : ''}`}>
-                  <h1>3+</h1>
-                  <h3>Years of experience</h3>
+                  <h1>1+</h1>
+                  <h3>Year of experience</h3>
                 </div>
               </div>
             </Col>
