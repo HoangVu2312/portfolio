@@ -138,7 +138,7 @@ function About() {
               <motion.div
                 className="center-planet d-flex justify-content-center align-items-center position-absolute"
                 initial={{ x: 0, y: 0 }}
-                animate={{ x: "17vw", y: "17vh" }}
+                animate={{ x: "20vw", y: "17vh" }}
                 transition={{
                   duration: 0.5,
                   type: "ease-out",
@@ -290,7 +290,20 @@ function About() {
               <motion.div
                 className="center-planet d-flex justify-content-center align-items-center position-absolute"
                 initial={{ x: 0, y: 0 }}
-                animate={{ x: "-35vw", y: "18vh" }}
+                animate={{ x: "-30vw", y: "-19vh" }}
+                transition={{
+                  duration: 0.5,
+                  type: "ease-out",
+                  delay: 2,
+                }}
+              >
+                <h6>consulting</h6>
+              </motion.div>
+
+              <motion.div
+                className="center-planet d-flex justify-content-center align-items-center position-absolute"
+                initial={{ x: 0, y: 0 }}
+                animate={{ x: "-30vw", y: "18vh" }}
                 transition={{
                   duration: 0.5,
                   type: "ease-out",
