@@ -158,7 +158,7 @@ function About() {
                   delay: 2,
                 }}
               >
-                <h6>Languages</h6>
+                <h6>TailwindCSS</h6>
               </motion.div>
 
               <motion.div
@@ -219,7 +219,7 @@ function About() {
                   delay: 2,
                 }}
               >
-                <h6>mongodb</h6>
+                <h6>GraphQL</h6>
               </motion.div>
 
               <motion.div
@@ -232,7 +232,7 @@ function About() {
                   delay: 2,
                 }}
               >
-                <h6>MYSQL</h6>
+                <h6>SQL/NoSQL</h6>
               </motion.div>
 
               <motion.div
@@ -258,7 +258,33 @@ function About() {
                   delay: 2,
                 }}
               >
-                <h6>FIREBASE</h6>
+                <h6>NEXTJS</h6>
+              </motion.div>
+
+              <motion.div
+                className="center-planet d-flex justify-content-center align-items-center position-absolute"
+                initial={{ x: 0, y: 0 }}
+                animate={{ x: "20vw", y: "-12vh" }}
+                transition={{
+                  duration: 0.5,
+                  type: "ease-out",
+                  delay: 2,
+                }}
+              >
+                <h6>Azure/AWS</h6>
+              </motion.div>
+
+              <motion.div
+                className="center-planet d-flex justify-content-center align-items-center position-absolute"
+                initial={{ x: 0, y: 0 }}
+                animate={{ x: "5vw", y: "22vh" }}
+                transition={{
+                  duration: 0.5,
+                  type: "ease-out",
+                  delay: 2,
+                }}
+              >
+                <h6>CMS</h6>
               </motion.div>
 
               <motion.div
