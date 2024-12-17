@@ -162,7 +162,7 @@ function Contact() {
           {/* Icons */}
           <div className="icons  d-flex justify-content-center align-items-center">
             <div className="linkedin">
-              <a href='https://www.linkedin.com/in/huy-hoang-vu-94a49b275/' target="_blank"><i className="fab fa-linkedin fa-3x mx-2"></i></a>
+              <a href='https://www.linkedin.com/in/hoang2312' target="_blank"><i className="fab fa-linkedin fa-3x mx-2"></i></a>
             </div>
             <div className="github">
               <a href='https://github.com/HoangVu2312' target="_blank" ><i className="fab fa-github fa-3x  mx-4"></i></a>
